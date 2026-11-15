@@ -4,11 +4,11 @@ VALOBOT is a desktop workspace for managing your Eldorado Valorant boosting offe
 
 ## Download
 
-Windows x64 desktop downloads will be published under **Releases**:
+[Download VALOBOT 1.0.0 for Windows x64](https://github.com/amrhossamo/VALOBOT-Downloads/releases/tag/v1.0.0):
 
 - **Setup**: installs VALOBOT and creates shortcuts.
 - **Portable**: runs without a separate Node.js installation.
-- **ZIP**: extract every file into a folder, then open `VALOBOT.exe`.
+SHA256SUMS.txt contains the checksums for both downloads.
 
 An account activated by your administrator is required. There is no public signup or payment checkout. Subscription payments and renewal are handled directly with the administrator.
 
@@ -38,7 +38,7 @@ Early builds are unsigned. SHA-256 checksums accompany published downloads. This
 
 ## بالعربي
 
-حمّل النسخة المناسبة من **Releases**. نسخة Setup للتثبيت، وPortable للتشغيل المحمول. نسخة ZIP لازم تفك كل ملفاتها مع بعض وتشغّل `VALOBOT.exe`؛ مش محتاج تثبّت Node.js.
+حمّل النسخة المناسبة من **Releases**. نسخة Setup للتثبيت، وPortable للتشغيل المحمول. مش محتاج تثبّت Node.js.
 
 سجّل دخولك بالحساب الذي استلمته من الأدمن، ثم اربط حساب Eldorado، وحدد أسعارك ومددك ورسائلك. اعمل فحص الجاهزية قبل تشغيل العروض الحقيقية. الدفع والتجديد خارج البرنامج عن طريق الأدمن.
 
@@ -47,3 +47,4 @@ Early builds are unsigned. SHA-256 checksums accompany published downloads. This
 الإصدارات الأولى غير موقّعة رقميًا. حسابات العملاء وبيانات Eldorado ومفاتيح إدارة الخدمة لا تُنشر في هذا المستودع.
 
 حساب العميل مرتبط بحساب Eldorado واحد ثابت. فصل الحساب أو إعادة تثبيت البرنامج لا يلغي الربط؛ التغيير من صلاحية الأدمن فقط. تسجيل الدخول من نسخة أخرى ينهي الجلسة السابقة عند التحقق التالي.
+
