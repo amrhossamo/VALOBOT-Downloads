@@ -12,6 +12,10 @@ Windows x64 desktop downloads will be published under **Releases**:
 
 An account activated by your administrator is required. There is no public signup or payment checkout. Subscription payments and renewal are handled directly with the administrator.
 
+## Account protection
+
+Each customer account is locked to the first Eldorado Seller API account connected through VALOBOT. Disconnecting or reinstalling does not reset that server-side link. A change requires explicit administrator approval. Another customer login ends the earlier session at its next verification. No device-specific lock is used.
+
 ## Features
 
 - Arabic and English interface.
@@ -24,7 +28,7 @@ An account activated by your administrator is required. There is no public signu
 - Automatic settings saves, optional notifications and subscription reminders.
 - Optional Eldorado inbox for manual replies.
 
-Eldorado credentials and pricing are stored on your device. Saved Eldorado login uses Windows DPAPI. The subscription service stores VALOBOT account and license information, not your Eldorado credentials.
+Eldorado credentials and pricing are stored on your device. Saved Eldorado login uses Windows DPAPI. The subscription service stores VALOBOT account and license information plus a one-way seller-binding fingerprint and short reference. Your Eldorado Client Secret stays on your device.
 
 The bot requires an active subscription, valid Eldorado Seller API access, an internet connection and a running device. New request checks run every five seconds; Eldorado response time also affects delivery of an offer. Closing the app stops the bot unless you choose to minimize it to the tray.
 
@@ -41,3 +45,5 @@ Early builds are unsigned. SHA-256 checksums accompany published downloads. This
 المعاينة لا ترسل عروضًا. الخانات غير المسعّرة والطلبات خارج فلاترك يتم تخطيها بسبب ظاهر في سجل النشاط. تغيير الأسعار أثناء عمل البوت يُحفظ، لكنه يحتاج إيقاف البوت وتشغيله ليُطبَّق على الإرسال.
 
 الإصدارات الأولى غير موقّعة رقميًا. حسابات العملاء وبيانات Eldorado ومفاتيح إدارة الخدمة لا تُنشر في هذا المستودع.
+
+حساب العميل مرتبط بحساب Eldorado واحد ثابت. فصل الحساب أو إعادة تثبيت البرنامج لا يلغي الربط؛ التغيير من صلاحية الأدمن فقط. تسجيل الدخول من نسخة أخرى ينهي الجلسة السابقة عند التحقق التالي.
