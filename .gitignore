@@ -1,0 +1,7 @@
+*.exe
+*.zip
+*.dpapi
+.env*
+node_modules/
+.wrangler/
+eldorado-data/
