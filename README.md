@@ -4,13 +4,21 @@ VALOBOT is a desktop workspace for managing your Eldorado Valorant boosting offe
 
 ## Download
 
-[Download VALOBOT 1.0.0 for Windows x64](https://github.com/amrhossamo/VALOBOT-Downloads/releases/tag/v1.0.0):
+[Download the latest VALOBOT for Windows x64](https://github.com/amrhossamo/VALOBOT-Downloads/releases/latest):
 
 - **Setup**: installs VALOBOT and creates shortcuts.
 - **Portable**: runs without a separate Node.js installation.
 SHA256SUMS.txt contains the checksums for both downloads.
 
 An account activated by your administrator is required. There is no public signup or payment checkout. Subscription payments and renewal are handled directly with the administrator.
+
+## Updates and settings
+
+If you have 1.0.0, download and install the new **Setup once**. Starting with 1.1.0, the installed app checks GitHub Releases after launch and downloads newer versions in the background. Choose **Restart and update** after stopping the bot. Installation is blocked while the bot is running or busy, or if saving settings fails. Portable updates remain manual.
+
+Prices, filters, server rank limits and Solo/Duo messages persist on the Windows device per VALOBOT account across updates. **General Settings → Settings backup** exports/imports a JSON backup. Backups do not include passwords, Eldorado credentials or login tokens. Keep a backup before moving to a different device.
+
+The updater follows the public GitHub release manifest and verifies installer checksums. Initial builds remain unsigned; a manual update round-trip on a separate clean customer PC has not yet been completed.
 
 ## Account protection
 
@@ -48,3 +56,5 @@ Early builds are unsigned. SHA-256 checksums accompany published downloads. This
 
 حساب العميل مرتبط بحساب Eldorado واحد ثابت. فصل الحساب أو إعادة تثبيت البرنامج لا يلغي الربط؛ التغيير من صلاحية الأدمن فقط. تسجيل الدخول من نسخة أخرى ينهي الجلسة السابقة عند التحقق التالي.
 
+
+للتحديث من 1.0.0: حمّل نسخة Setup الجديدة وثبّتها مرة واحدة. بعدها التحديثات القادمة تُنزّل من داخل البرنامج، والتثبيت بعد إيقاف البوت وحفظ الإعدادات. من الإعدادات العامة تقدر تعمل استيراد وتصدير لأسعارك وفلاترك ورسائلك؛ النسخة الاحتياطية لا تحتوي على الباسوردات أو مفاتيح Eldorado.
