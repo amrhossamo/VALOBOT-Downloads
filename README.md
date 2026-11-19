@@ -1,6 +1,6 @@
 # VALOBOT — Windows downloads
 
-VALOBOT is a desktop workspace for managing your Eldorado Valorant boosting offers.
+VALOBOT is a desktop workspace for managing your Eldorado Valorant and League of Legends boosting offers.
 
 ## Download
 
@@ -23,6 +23,10 @@ The updater follows the public GitHub release manifest and verifies installer ch
 ## Account protection
 
 Each customer account is locked to the first Eldorado Seller API account connected through VALOBOT. Disconnecting or reinstalling does not reset that server-side link. A change requires explicit administrator approval. Another customer login ends the earlier session at its next verification. No device-specific lock is used.
+
+## Game workspaces
+
+Valorant and League of Legends have separate prices, filters, server rank limits and messages. Your administrator activates and renews each game subscription independently. Connect your Eldorado seller account once; select one or both games to run. Switching Game workspace only changes the displayed settings. Shared API requests are scheduled to coordinate both engines. Live offer delivery still depends on valid pricing, filters, permissions and Eldorado availability.
 
 ## Features
 
