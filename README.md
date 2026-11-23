@@ -1,12 +1,14 @@
-# VALOBOT — Windows downloads
+# AutoOffer — Windows downloads
 
-VALOBOT is a desktop workspace for managing your Eldorado Valorant and League of Legends boosting offers.
+AutoOffer is a desktop workspace for managing your Eldorado Valorant and League of Legends boosting offers.
+
+Previously named VALOBOT. Existing installations receive AutoOffer through the same update feed; saved settings and account data keep their existing profile location.
 
 ## Download
 
-[Download the latest VALOBOT for Windows x64](https://github.com/amrhossamo/VALOBOT-Downloads/releases/latest):
+[Download the latest AutoOffer for Windows x64](https://github.com/amrhossamo/VALOBOT-Downloads/releases/latest):
 
-- **Setup**: installs VALOBOT and creates shortcuts.
+- **Setup**: installs AutoOffer and creates shortcuts.
 - **Portable**: runs without a separate Node.js installation.
 SHA256SUMS.txt contains the checksums for both downloads.
 
@@ -16,13 +18,13 @@ An account activated by your administrator is required. There is no public signu
 
 If you have 1.0.0, download and install the new **Setup once**. Starting with 1.1.0, the installed app checks GitHub Releases after launch and downloads newer versions in the background. Choose **Restart and update** after stopping the bot. Installation is blocked while the bot is running or busy, or if saving settings fails. Portable updates remain manual.
 
-Prices, filters, server rank limits and Solo/Duo messages persist on the Windows device per VALOBOT account across updates. **General Settings → Settings backup** exports/imports a JSON backup. Backups do not include passwords, Eldorado credentials or login tokens. Keep a backup before moving to a different device.
+Prices, filters, server rank limits and Solo/Duo messages persist on the Windows device per AutoOffer account across updates. **General Settings → Settings backup** exports/imports a JSON backup. Backups do not include passwords, Eldorado credentials or login tokens. Keep a backup before moving to a different device.
 
 The updater follows the public GitHub release manifest and verifies installer checksums. Initial builds remain unsigned; a manual update round-trip on a separate clean customer PC has not yet been completed.
 
 ## Account protection
 
-Each customer account is locked to a verified Eldorado seller account ID. VALOBOT verifies Eldorado’s signed short-lived access token against its official public keys; a new API key for the same seller is accepted, while a different seller requires administrator approval. The license service stores an account hash, not the identity token or Client Secret. Legacy client-key locks migrate after proof from the old key; if that key is unavailable, the administrator must approve the migration. Another customer login ends the earlier session at its next verification. No device-specific lock is used. Remembered VALOBOT login lasts up to 30 days; expiry, revocation and suspension still apply.
+Each customer account is locked to a verified Eldorado seller account ID. AutoOffer verifies Eldorado’s signed short-lived access token against its official public keys; a new API key for the same seller is accepted, while a different seller requires administrator approval. The license service stores an account hash, not the identity token or Client Secret. Legacy client-key locks migrate after proof from the old key; if that key is unavailable, the administrator must approve the migration. Another customer login ends the earlier session at its next verification. No device-specific lock is used. Remembered AutoOffer login lasts up to 30 days; expiry, revocation and suspension still apply.
 
 ## Game workspaces
 
@@ -34,13 +36,14 @@ Valorant and League of Legends have separate prices, filters, server rank limits
 - Readiness checks before starting live offers.
 - Rank Boost, Net Wins and Placements pricing from your settings.
 - Base prices, server surcharges and a Duo surcharge percentage.
-- Separate Solo and Duo messages.
+- Separate Solo and Duo offer messages.
+- Optional existing-chat follow-ups after confirmed automatic offers, with separate Solo/Duo text and up to two prepared images per game. Closed/read-only chats are skipped; uncertain delivery is not automatically retried. Keep AutoOffer open for follow-up dispatch. Real customer chat delivery remains a manual validation.
 - Request previews that never submit an offer.
 - Clear skip reasons with shortcuts to the relevant settings.
 - Automatic settings saves, optional notifications and subscription reminders.
 - Optional Eldorado inbox for manual replies.
 
-Eldorado credentials and pricing are stored on your device. Saved Eldorado login uses Windows DPAPI. The subscription service stores VALOBOT account and license information plus a one-way seller-binding fingerprint and short reference. Your Eldorado Client Secret stays on your device.
+Eldorado credentials and pricing are stored on your device. Saved Eldorado login uses Windows DPAPI. The subscription service stores AutoOffer account and license information plus a one-way seller-binding fingerprint and short reference. Your Eldorado Client Secret stays on your device.
 
 The bot requires an active subscription, valid Eldorado Seller API access, an internet connection and a running device. New request checks run every five seconds; Eldorado response time also affects delivery of an offer. Closing the app stops the bot unless you choose to minimize it to the tray.
 
