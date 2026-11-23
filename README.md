@@ -22,7 +22,7 @@ The updater follows the public GitHub release manifest and verifies installer ch
 
 ## Account protection
 
-Each customer account is locked to the first Eldorado Seller API account connected through VALOBOT. Disconnecting or reinstalling does not reset that server-side link. A change requires explicit administrator approval. Another customer login ends the earlier session at its next verification. No device-specific lock is used.
+Each customer account is locked to a verified Eldorado seller account ID. VALOBOT verifies Eldorado’s signed short-lived access token against its official public keys; a new API key for the same seller is accepted, while a different seller requires administrator approval. The license service stores an account hash, not the identity token or Client Secret. Legacy client-key locks migrate after proof from the old key; if that key is unavailable, the administrator must approve the migration. Another customer login ends the earlier session at its next verification. No device-specific lock is used. Remembered VALOBOT login lasts up to 30 days; expiry, revocation and suspension still apply.
 
 ## Game workspaces
 
