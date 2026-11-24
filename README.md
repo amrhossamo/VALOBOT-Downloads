@@ -9,8 +9,7 @@ Previously named VALOBOT. Existing installations receive AutoOffer through the s
 [Download the latest AutoOffer for Windows x64](https://github.com/amrhossamo/VALOBOT-Downloads/releases/latest):
 
 - **Setup**: installs AutoOffer and creates shortcuts.
-- **Portable**: runs without a separate Node.js installation.
-SHA256SUMS.txt contains the checksums for both downloads.
+New releases provide **Setup only**, with automatic-update support. SHA256SUMS.txt contains installer and updater-file checksums.
 
 An account activated by your administrator is required. There is no public signup or payment checkout. Subscription payments and renewal are handled directly with the administrator.
 
@@ -34,7 +33,7 @@ Valorant and League of Legends have separate prices, filters, server rank limits
 
 - Arabic and English interface.
 - Readiness checks before starting live offers.
-- Rank Boost, Net Wins and Placements pricing from your settings.
+- Rank Boost, Net Wins and Placements pricing from your settings, with days + hours for every rank (per match for Net Wins/Placements).
 - Base prices, server surcharges and a Duo surcharge percentage.
 - Separate Solo and Duo offer messages.
 - Optional existing-chat follow-ups after confirmed automatic offers, with separate Solo/Duo text and up to two prepared images per game. Closed/read-only chats are skipped; uncertain delivery is not automatically retried. Keep AutoOffer open for follow-up dispatch. Real customer chat delivery remains a manual validation.
@@ -45,7 +44,7 @@ Valorant and League of Legends have separate prices, filters, server rank limits
 
 Eldorado credentials and pricing are stored on your device. Saved Eldorado login uses Windows DPAPI. The subscription service stores AutoOffer account and license information plus a one-way seller-binding fingerprint and short reference. Your Eldorado Client Secret stays on your device.
 
-The bot requires an active subscription, valid Eldorado Seller API access, an internet connection and a running device. New request checks run every five seconds; Eldorado response time also affects delivery of an offer. Closing the app stops the bot unless you choose to minimize it to the tray.
+The bot requires an active subscription, valid Eldorado Seller API access, an internet connection and a running device. New request checks use your configured 1–300 second interval; Eldorado response time also affects delivery of an offer. Closing the app stops the bot unless you choose to minimize it to the tray.
 
 Early builds are unsigned. SHA-256 checksums accompany published downloads. This repository distributes downloads and documentation; the application and subscription-service source are not published here.
 
