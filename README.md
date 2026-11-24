@@ -33,10 +33,14 @@ Valorant and League of Legends have separate prices, filters, server rank limits
 
 - Arabic and English interface.
 - Readiness checks before starting live offers.
-- Rank Boost, Net Wins and Placements pricing from your settings, with days + hours for every rank (per match for Net Wins/Placements).
+- Rank Boost, Net Wins and Placements pricing from your settings, with hours-only durations for every rank (per match for Net Wins/Placements).
 - Base prices, server surcharges and a Duo surcharge percentage.
 - Separate Solo and Duo offer messages.
-- Optional existing-chat follow-ups after confirmed automatic offers, with separate Solo/Duo text and up to two prepared images per game. Closed/read-only chats are skipped; uncertain delivery is not automatically retried. Keep AutoOffer open for follow-up dispatch. Real customer chat delivery remains a manual validation.
+- Separate Net Wins and Placements tables.
+- Configurable League Rank Boost discount above 30 LP; 0% disables it.
+- League regions: EUW, EUNE, NA, ME, LAN, LAS and TR.
+- Fixed inbox layout with message scrolling inside the chat.
+- Optional follow-up chat after confirmed automatic offers: reuse the request conversation or ask Eldorado to open it, then send separate Solo/Duo text and up to two prepared images per game. Unwritable chats are skipped; uncertain opening/delivery is not automatically retried. Keep AutoOffer open for follow-up dispatch. Real customer chat delivery remains a manual validation.
 - Request previews that never submit an offer.
 - Clear skip reasons with shortcuts to the relevant settings.
 - Automatic settings saves, optional notifications and subscription reminders.
