@@ -1,6 +1,6 @@
 # AutoOffer — Windows downloads
 
-AutoOffer is a desktop workspace for managing your Eldorado Valorant and League of Legends boosting offers.
+AutoOffer is a Windows desktop workspace for managing your Eldorado League of Legends boosting offers. The current edition supports League only.
 
 Previously named VALOBOT. Existing installations receive AutoOffer through the same update feed; saved settings and account data keep their existing profile location.
 
@@ -25,9 +25,9 @@ The updater follows the public GitHub release manifest and verifies installer ch
 
 Each customer account is locked to a verified Eldorado seller account ID. AutoOffer verifies Eldorado’s signed short-lived access token against its official public keys; a new API key for the same seller is accepted, while a different seller requires administrator approval. The license service stores an account hash, not the identity token or Client Secret. Legacy client-key locks migrate after proof from the old key; if that key is unavailable, the administrator must approve the migration. Administrator approval for a seller change preserves the customer login, but an explicit Connect is required to verify the replacement seller. Connect always checks again, even for the same API key. A genuinely revoked login returns to the sign-in screen without erasing saved seller credentials. Another customer login ends the earlier session at its next verification. No device-specific lock is used. Remembered AutoOffer login lasts up to 30 days; expiry, revocation and suspension still apply.
 
-## Game workspaces
+## League workspace
 
-Valorant and League of Legends have separate prices, filters, server rank limits and messages. Your administrator activates and renews each game subscription independently. Connect your Eldorado seller account once; select one or both games to run. Switching Game workspace only changes the displayed settings. Shared API requests are scheduled to coordinate both engines. Live offer delivery still depends on valid pricing, filters, permissions and Eldorado availability.
+The app runs one League engine. Existing League prices, messages and saved Seller API credentials stay in their previous profile location. Old game settings are not deleted. Your administrator manages League access; connecting your seller still requires a valid signed identity.
 
 ## Features
 
@@ -35,11 +35,17 @@ Valorant and League of Legends have separate prices, filters, server rank limits
 - Readiness checks before starting live offers.
 - Rank Boost, Net Wins and Placements pricing from your settings, with hours-only durations for every rank (per match for Net Wins/Placements).
 - Base prices, server surcharges and a Duo surcharge percentage.
-- Separate Solo and Duo offer messages.
+- Separate Solo and Duo offer comments. Follow-up chat sends each nonempty line as its own message, followed by selected images.
+- Per-server Duo permissions; Solo continues to use the main server selection.
+- Optional one-time no-reply reminder with your text and delay. Any customer reply after the first chat messages cancels it permanently. Closing/restarting/stopping or losing reply verification suppresses the reminder.
+- Inbox request details, verified order status, your submitted offer price and configured/rounded delivery, separate from the paid order total. Unknown payment states remain unknown.
+- Simple English Live Activity with start/stop, successful offers and clear failure reasons.
+- Distinct missing-price and missing-duration errors, plus a warning when saved settings differ from active bot rules.
 - Separate Net Wins and Placements tables.
 - Configurable League Rank Boost discount above 30 LP; 0% disables it.
 - League regions: EUW, EUNE, NA, ME, LAN, LAS and TR.
 - Fixed inbox layout with message scrolling inside the chat.
+- Automatic rounding to a supported delivery duration; above 2400 hours, the platform maximum is used.
 - Optional follow-up chat after confirmed automatic offers: reuse the request conversation or ask Eldorado to open it, then send separate Solo/Duo text and up to two prepared images per game. Unwritable chats are skipped; uncertain opening/delivery is not automatically retried. Keep AutoOffer open for follow-up dispatch. Real customer chat delivery remains a manual validation.
 - Request previews that never submit an offer.
 - Clear skip reasons with shortcuts to the relevant settings.
